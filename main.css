@@ -1,5 +1,9 @@
 body {
-  background-color: #00ffff;
+  background-image:url(tab.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 111%;
 }
 
 h1, p {
