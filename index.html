@@ -5,18 +5,20 @@
   <meta charset="utf-8">
 </head>
 <body>
-  <svg width="100%" viewBox="0 0 1600 760">
+  <p class="overlapable" id="meme"><b>Score: 0</p><p class="overlapable" id="totaltime"><b>Time: 0</p>
+  <!--<p>Time:<p id="time"/></p>-->
+  <svg width="100%" viewBox="0 0 1600 670" id="svg">
     <image id="sonic" xlink:href="sonic.png" x="0" y="0" height="150px" width="150px"/>
     <image id="rang" xlink:href="rings.png" x="100" y="0" height="150px" width="150px">
-      <animate id="snack" attributeName="y" to="650" dur="1s" fill="freeze" begin="cm.end; 0s"/>
+      <animate id="snack" attributeName="y" to="550" dur="1s" fill="freeze" begin="cm.end; 0s"/>
       <animate begin="snack.end" attributeName="y" to="0" dur="1s" fill="freeze" id="cm"/>
     </image>
     <image id="rang1" xlink:href="rings.png" x="1200" y="0" height="150px" width="150px">
-      <animate id="snack1" attributeName="y" to="650" dur="1.5s" fill="freeze" begin="cm1.end; 0s"/>
+      <animate id="snack1" attributeName="y" to="550" dur="1.5s" fill="freeze" begin="cm1.end; 0s"/>
       <animate begin="snack1.end" attributeName="y" to="0" dur="1.5s" fill="freeze" id="cm1"/>
     </image>
     <image id="slurp" xlink:href="drank.png" x="100" y="0" height="150px" width="150px">
-      <animate id="drink1" attributeName="y" to="650" dur="1.8s" fill="freeze" begin="drinker1.end; 0s"/>
+      <animate id="drink1" attributeName="y" to="550" dur="1.8s" fill="freeze" begin="drinker1.end; 0s"/>
       <animate id="drink1" attributeName="x" to="1300" dur="1.8s" fill="freeze" begin="drinker1.end; 0s"/>
       <animate begin="drink1.end" attributeName="y" to="0" dur="1.8s" fill="freeze" id="drinker1"/>
       <animate begin="drink1.end" attributeName="x" to="100" dur="1.8s" fill="freeze" id="drinker1"/>

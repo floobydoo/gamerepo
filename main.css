@@ -8,5 +8,9 @@ body {
 
 h1, p {
   font-family: courier;
-  color: white;
+  color: gray;
+}
+
+.overlapable{
+  z-index: 1;
 }
