@@ -5,25 +5,32 @@
   <meta charset="utf-8">
 </head>
 <body>
-  <p class="overlapable" id="meme"><b>Score: 0</p><p class="overlapable" id="totaltime"><b>Time: 0</p>
-  <!--<p>Time:<p id="time"/></p>-->
-  <svg width="100%" viewBox="0 0 1600 670" id="svg">
-    <image id="sonic" xlink:href="sonic.png" x="0" y="0" height="150px" width="150px"/>
-    <image id="rang" xlink:href="rings.png" x="100" y="0" height="150px" width="150px">
-      <animate id="snack" attributeName="y" to="550" dur="1s" fill="freeze" begin="cm.end; 0s"/>
-      <animate begin="snack.end" attributeName="y" to="0" dur="1s" fill="freeze" id="cm"/>
-    </image>
-    <image id="rang1" xlink:href="rings.png" x="1200" y="0" height="150px" width="150px">
-      <animate id="snack1" attributeName="y" to="550" dur="1.5s" fill="freeze" begin="cm1.end; 0s"/>
-      <animate begin="snack1.end" attributeName="y" to="0" dur="1.5s" fill="freeze" id="cm1"/>
-    </image>
-    <image id="slurp" xlink:href="drank.png" x="100" y="0" height="150px" width="150px">
-      <animate id="drink1" attributeName="y" to="550" dur="1.8s" fill="freeze" begin="drinker1.end; 0s"/>
-      <animate id="drink1" attributeName="x" to="1300" dur="1.8s" fill="freeze" begin="drinker1.end; 0s"/>
-      <animate begin="drink1.end" attributeName="y" to="0" dur="1.8s" fill="freeze" id="drinker1"/>
-      <animate begin="drink1.end" attributeName="x" to="100" dur="1.8s" fill="freeze" id="drinker1"/>
-    </image>
-  </svg>
-</body>
+  <p class="overlapable" id="meme"><b>Score: 0</p><p class="overlapable" id="move1"><b>Move: 0</p>
+    <svg width="100%" viewBox="0 0 1600 670" id="svg">
+      <image id="sonic" xlink:href="sonic.png" x="0" y="0" height="150px" width="150px"/>
+      <image id="rang" xlink:href="rings.png" x="100" y="0" height="150px" width="150px">
+        <animate id="snack" attributeName="y" to="550" dur="1s" fill="freeze" begin="cm.end; 0s"/>
+        <animate begin="snack.end" attributeName="y" to="0" dur="1s" id="cm"/>
+      </image>
+      <image id="rang1" xlink:href="rings.png" x="1200" y="0" height="150px" width="150px">
+        <animate id="snack1" attributeName="y" to="550" dur="1.5s" fill="freeze" begin="cm1.end; 0s"/>
+        <animate begin="snack1.end" attributeName="y" to="0" dur="1.5s" fill="freeze" id="cm1"/>
+      </image>
+      <image id="slurp" xlink:href="drank.png" x="100" y="0" height="150px" width="150px">
+        <animate id="drink1" attributeName="y" to="550" dur="1.8s" fill="freeze" begin="drinker1.end; 0s"/>
+        <animate id="drink1" attributeName="x" to="1300" dur="1.8s" fill="freeze" begin="drinker1.end; 0s"/>
+        <animate begin="drink1.end" attributeName="y" to="0" dur="1.8s" fill="freeze" id="drinker1"/>
+        <animate begin="drink1.end" attributeName="x" to="100" dur="1.8s" fill="freeze" id="drinker1"/>
+      </image>
+      <rect id="gs" x="400" y="30" width="700" height="500" fill="white" opacity="0">
+      </rect>
+      <g id="gameover" height="1600px" width="670px" opacity="0">
+        <text id="meme1" x="425" y="100" font-family="courier" font-size="80">Score: 0</text>
+        <text id="move" x="425" y="200" font-family="courier" font-size="80">Moves: 0</text>
+        <text id="meme2" x="425" y="300" font-family="courier" font-size="80">Highscore: 0</text>
+        <text id="restartbutton" x="425" y="425" font-family="courier" font-size="80"  onClick="window.location.reload()"fill="#506060">Restart</text>
+      </g>
+    </svg>
+  </body>
   <script type="text/javascript" src="game.js"></script>
-</html>
+  </html>
